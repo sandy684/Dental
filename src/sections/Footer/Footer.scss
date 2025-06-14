@@ -1,0 +1,185 @@
+@import '../../sass/colors.scss';
+
+.footer-link ul li a,
+.footer-contact .contact-text p,
+.footer-contact .contact-text h5,
+.social-logo ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-link ul li a:hover,
+.footer-contact .contact-text p:hover,
+.footer-contact .contact-text h5:hover,
+.social-logo ul li a:hover {
+  color: #0056A0;
+  cursor: pointer;
+}
+
+footer {
+    background: rgba(108, 189, 221, 0.774);
+
+    .footer-logo {
+         margin-bottom: 15px;
+        width: 150px;
+    }
+
+    .social-logo {
+        p {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: black;
+        }
+
+        ul {
+            margin-bottom: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                
+                a {
+                    color: whitesmoke;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .footer-link {
+        p {
+            text-transform: uppercase;
+            color: black;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style: none;
+                margin-bottom: 10px;
+
+                a {
+                    text-decoration: none;
+                    color:  #74758F;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .footer-contact {
+        p {
+            text-transform: uppercase;
+            color: black;
+        }
+    }
+
+    .contact-list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-top: 30px;
+
+        .contact-icon {
+            background: $color-white;
+            width:50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 20px;
+            position: relative;
+            z-index: 0;
+            text-align: center;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 70px;
+                height: 70px;
+                background: $color-white;
+                top: -10px;
+                left: -10px;
+                z-index: -1;
+                opacity: .3;
+                border-radius: 20px;
+            }
+
+            img {
+                max-width: 50px;
+            }
+        }
+
+        .contact-text {
+            margin-left: 30px;
+
+            p {
+                font-size: 12px;
+                margin-bottom: 5px;
+                text-transform: capitalize;
+                font-weight: 500;
+                color: black;
+            }
+
+            h5 {
+                color: #74758F;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .copyright-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+
+        .copy-text {
+            p {
+                margin-bottom: 0;
+                color: black;
+            }
+        }
+
+        .copy-links {
+            ul {
+                li {
+                    display: inline-block;
+                    margin-left: 20px; 
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mobile Responsive
+@media (max-width:575px){
+    footer {
+        .contact-list {
+            margin-bottom: 10px;
+
+            .contact-icon {
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                border-radius: 10px;
+
+                &::before {
+                    width: 60px;
+                    height: 60px;
+                    top: -8px;
+                    left: -8px;
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+}
