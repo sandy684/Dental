@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Team.scss';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import imgOne from '../../assets/doctor-1.png';
