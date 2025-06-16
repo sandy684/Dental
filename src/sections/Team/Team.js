@@ -1,6 +1,6 @@
 
 import './Team.scss';
-import SectionTitle from '../../components/SectionTitle/SectionTitle';
+// import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import imgOne from '../../assets/doctor-1.png';
 import imgTwo from '../../assets/doctor-2.png';
 import imgThree from '../../assets/doctor-3-2.png';

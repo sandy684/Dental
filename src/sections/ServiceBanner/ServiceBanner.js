@@ -109,12 +109,12 @@ const Services = () => {
   const handleBack = () => {
     setSelectedService(null);
   };
-  const [fadeUpClass, setFadeUpClass] = useState('');
-useEffect(() => {
-  setTimeout(() => {
-    setFadeUpClass('fade-up-animation');
-  }, 500); // delay just to let DOM settle
-}, []);
+//   const [fadeUpClass, setFadeUpClass] = useState('');
+// useEffect(() => {
+//   setTimeout(() => {
+//     setFadeUpClass('fade-up-animation');
+//   }, 500); // delay just to let DOM settle
+// }, []);
 useEffect(() => {
   window.scrollTo(0, 0);
 }, []);

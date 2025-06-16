@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import './Safety.scss';
-import SectionTitle from '../../components/SectionTitle/SectionTitle';
+// import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
 const Safety = () => {
     return (

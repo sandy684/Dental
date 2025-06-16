@@ -1,8 +1,8 @@
-import React from 'react';
+// import React from 'react';
 import './Appointment.scss';
-import SectionTitle from '../../components/SectionTitle/SectionTitle';
-import {AiFillHome} from "react-icons/ai";
-import ContactForm from '../../components/ContactForm/ContactForm';
+// import SectionTitle from '../../components/SectionTitle/SectionTitle';
+// import {AiFillHome} from "react-icons/ai";
+// import ContactForm from '../../components/ContactForm/ContactForm';
 
 const Appointment = () => {
 
