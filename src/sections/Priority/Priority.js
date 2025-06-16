@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
-import priorityImg from '../../assets/about/priority.png';
+import priorityImg from '../../assets/priority.jpg';
 import './Priority.scss';
 
 const Priority = () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import './Banner.scss';
 import {Link} from 'react-router-dom';
 import icon from '../../assets/banner/icons/Calling.png';
-import bannerImg from '../../assets/banner/1.png';
+import bannerImg from '../../assets/banner/kh.png';
 import doctorImg from '../../assets/banner/doctor.png';
 import bannerPattern from '../../assets/banner/pattern_02.png';
 import shapeOne from '../../assets/banner/vector_01.png';

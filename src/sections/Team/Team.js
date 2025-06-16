@@ -1,29 +1,29 @@
 import React from 'react';
 import './Team.scss';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
-import imgOne from '../../assets/about/team/1.png';
-import imgTwo from '../../assets/about/team/2.png';
-import imgThree from '../../assets/about/team/3.png';
-import imgFour from '../../assets/about/team/4.png';
+import imgOne from '../../assets/doctor-1.png';
+import imgTwo from '../../assets/doctor-2.png';
+import imgThree from '../../assets/doctor-3-2.png';
+import imgFour from '../../assets/doctor-4.png';
 
 const Team = () => {
 
     const teams = [
         {
             'img': imgOne,
-            'name': 'Dianne Russell'
+            'name': 'John David'
         },
         {
             'img': imgTwo,
-            'name': 'Esther Howard'
+            'name': 'Subramaniyam'
         },
         {
             'img': imgThree,
-            'name': 'Darrell Steward'
+            'name': 'Sundari'
         },
         {
             'img': imgFour,
-            'name': 'Jenny Wilson'
+            'name': 'Keerthana'
         }
     ]
 

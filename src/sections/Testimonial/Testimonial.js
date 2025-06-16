@@ -1,9 +1,7 @@
 import React from 'react';
 import './Testimonial.scss';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
-import imgOne from '../../assets/testimonial/1.png';
-import imgTwo from '../../assets/testimonial/2.png';
-import imgThree from '../../assets/testimonial/3.png';
+import imgOne from '../../assets/user.png';
 import TestimoniCard from '../../components/TestimoniCard/TestimoniCard';
 import { AiFillStar } from "react-icons/ai";
 import Slider from "react-slick";
@@ -13,26 +11,26 @@ const Testimonial = () => {
     const testimonails = [
         {
             'img': imgOne,
-            'name': 'Robert Fox',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
-            'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
-        },
-        {
-            'img': imgTwo,
-            'name': 'Albert Flores',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
-            'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
-        },
-        {
-            'img': imgThree,
-            'name': 'Bessie Cooper',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
+            'name': 'Thamizhilakkiya Mutthiya',
+            'description' : 'The dental hospital offers exceptional care with experienced doctors and modern equipment. Patients appreciate the friendly staff and pain-free treatment experience.',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         },
         {
             'img': imgOne,
-            'name': 'Bessie Cooper',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
+            'name': 'RB SARAVANA KUMAR',
+            'description' : 'We have a good experience in this dental clinic in which well good caring and care the doctor explanation and care were very good we r very much satisfied thank you',
+            'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
+        },
+        {
+            'img': imgOne,
+            'name': 'Gnana Moorthy',
+            'description' : 'I did full mouth zirconia cap the Quality was too good ,in my age experience  she is not money minded . Good at treatment  and polite doctor. Clinic is clean and hygiene.',
+            'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
+        },
+        {
+            'img': imgOne,
+            'name': 'John sen',
+            'description' : 'My daughter liked the way the doctor handled. Made her comfortable. 5 stars suggested by my kid.care were very good we r very much satisfied thank you',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         }
     ]

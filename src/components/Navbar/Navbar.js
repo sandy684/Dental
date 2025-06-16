@@ -32,9 +32,9 @@ const Navbar = () => {
                   <Link className="nav-link" to="/singleservice">Service</Link>
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link" to="/blogs">Blogs</Link>
-                </li>
+                </li> */}
 
                 <li className="nav-item">
                   <Link className="nav-link" to="/contact">Contact Us</Link>

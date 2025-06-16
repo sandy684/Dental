@@ -9,7 +9,7 @@ const BlogsPage = () => {
     
     return (
         <>
-            <Navbar />
+            {/* <Navbar />
             <PageTitle />
             <section className='pb-70' data-aos="fade-up" data-aos-duration="2000">
                 <div className="container">
@@ -20,7 +20,7 @@ const BlogsPage = () => {
                     </div>
                 </div>
             </section>
-            <Footer />
+            <Footer /> */}
         </>
     );
 };

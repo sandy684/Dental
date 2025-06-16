@@ -2,7 +2,7 @@ import React from 'react';
 import './Expert.scss';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import { BsFillCheckCircleFill } from "react-icons/bs";
-import expertImg from '../../assets/expert.png';
+import expertImg from '../../assets/img.jpg';
 
 const Expert = () => {
     return (

@@ -28,7 +28,7 @@ const Services = () => {
             </div>
 
             <div className="services-link text-center">
-                <Link to='/'>
+                <Link to='/singleservice'>
                     View all service list
                     <BsFillArrowRightCircleFill/>
                 </Link>
