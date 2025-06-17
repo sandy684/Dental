@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/prs-logo.png';
 import './Footer.scss';
-import { FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import call from '../../assets/footer/calling.png';
 import time from '../../assets/footer/time.png';
@@ -10,47 +10,33 @@ import location from '../../assets/footer/location.png';
 const Footer = () => {
 
     const footerMenu = [
-        {
-            'name' : 'About Us',
-            'link' : '/'
-        },
-        {
-            'name' : 'Dental Services',
-            'link' : '/'
-        },
-        {
-            'name' : 'Dentist',
-            'link' : '/'
-        },
-        {
-            'name' : 'Blogs',
-            'link' : '/'
-        },
-        {
-            'name' : 'FAQs',
-            'link' : '/'
-        }
+        { name: 'Home', link: '/' },
+        { name: 'About Us', link: '/about' },
+        { name: 'Services', link: '/singleservice' },
+        { name: 'Contact Us', link: '/contact' },
+         
+     
     ];
 
     const footerContacts = [
         {
-            'title': 'Phone Number',
-            'info': '+917200718607',
-            'icon': call
+            title: 'Phone Number',
+            info: '+917200718607',
+            icon: call
         },
         {
-            'title': 'Open Hour',
-            'info': '10 AM to 1 PM & 5 PM to 9 PM',
-            'icon': time
+            title: 'Open Hour',
+            info: '10 AM to 1 PM & 5 PM to 9 PM',
+            icon: time
         },
         {
-            'title': 'Clinic Address',
-            'info': 'No 59/14, Jambulingam main road ,',
-            'info1':'Annai Anjugam Nagar, G.K.M Colony ,',
-            'info2':'Chennai - 600082',
-            'icon': location
+            title: 'Clinic Address',
+            info: 'No 59/14, Jambulingam main road ,',
+            info1: 'Annai Anjugam Nagar, G.K.M Colony ,',
+            info2: 'Chennai - 600082',
+            icon: location
         }
-    ]
+    ];
 
     return (
         <footer className='pt-100 pb-70'>
@@ -65,9 +51,9 @@ const Footer = () => {
                         <div className="social-logo">
                             <p>Follow us on</p>
                             <ul>
-                                <li><a href="/"><FaFacebookF/></a></li>
-                                <li><a href="/"><FaTwitter/></a></li>
-                                <li><a href="/"><FaInstagram/></a></li>
+                                <li><a href="/"><FaFacebookF /></a></li>
+                                <li><a href="/"><FaTwitter /></a></li>
+                                <li><a href="/"><FaInstagram /></a></li>
                             </ul>
                         </div>
                     </div>
@@ -76,7 +62,11 @@ const Footer = () => {
                             <p>Quick Links</p>
                             <ul>
                                 {
-                                    footerMenu.map(singleMenu => <li><Link to="/">{singleMenu.name}</Link></li>)
+                                    footerMenu.map((singleMenu, index) => (
+                                        <li key={index}>
+                                            <Link to={singleMenu.link}>{singleMenu.name}</Link>
+                                        </li>
+                                    ))
                                 }
                             </ul>
                         </div>
@@ -84,21 +74,20 @@ const Footer = () => {
                     <div className="col-lg-4 col-md-5">
                         <div className="footer-contact">
                             <p>Contact & Information</p>
-
                             {
-                                footerContacts.map(footerContact => {
-                                    return  <div className="contact-list">
-                                                <div className="contact-icon">
-                                                    <img src={footerContact.icon} alt="call" />
-                                                </div>
-                                                <div className="contact-text">
-                                                    <p>{footerContact.title}</p>
-                                                    <h5 className='mb-2'>{footerContact.info}</h5>
-                                                    <h5 className='mb-2'>{footerContact.info1}</h5>
-                                                    <h5 className='mb-2'>{footerContact.info2}</h5>
-                                                </div>
-                                            </div>
-                                })
+                                footerContacts.map((footerContact, idx) => (
+                                    <div className="contact-list" key={idx}>
+                                        <div className="contact-icon">
+                                            <img src={footerContact.icon} alt="call" />
+                                        </div>
+                                        <div className="contact-text">
+                                            <p>{footerContact.title}</p>
+                                            <h5 className='mb-2'>{footerContact.info}</h5>
+                                            {footerContact.info1 && <h5 className='mb-2'>{footerContact.info1}</h5>}
+                                            {footerContact.info2 && <h5 className='mb-2'>{footerContact.info2}</h5>}
+                                        </div>
+                                    </div>
+                                ))
                             }
                         </div>
                     </div>
@@ -107,13 +96,13 @@ const Footer = () => {
                 <div className="copyright-area">
                     <div className='copy-text'>
                         <p>&copy; PRS Dental. All Right Reserved</p>
-                    </div>  
+                    </div>
                     <div className='copy-links'>
                         <ul>
-                            <li><Link to='/'>Terms of Use</Link></li>
-                            <li><Link to='/'>Privacy Policy</Link></li>
+                            <li><Link to='/terms'>Terms of Use</Link></li>
+                            <li><Link to='/privacy'>Privacy Policy</Link></li>
                         </ul>
-                    </div>                          
+                    </div>
                 </div>
             </div>
         </footer>

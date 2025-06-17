@@ -1,17 +1,17 @@
 
 import './Team.scss';
 // import SectionTitle from '../../components/SectionTitle/SectionTitle';
-import imgOne from '../../assets/doctor-1.png';
-import imgTwo from '../../assets/doctor-2.png';
-import imgThree from '../../assets/doctor-3-2.png';
-import imgFour from '../../assets/doctor-4.png';
+import imgOne from '../../assets/male doctor.png';
+import imgTwo from '../../assets/female doctor.png';
+import imgThree from '../../assets/male doctor.png';
+import imgFour from '../../assets/female doctor.png';
 
 const Team = () => {
 
     const teams = [
         {
             'img': imgOne,
-            'name': 'John David'
+            'name': 'Sarathi'
         },
         {
             'img': imgTwo,

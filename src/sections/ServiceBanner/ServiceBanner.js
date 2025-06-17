@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 import './ServiceBanner.scss';
 import { Link } from 'react-router-dom';
 
-import service1 from '../../assets/07.jpg';
-import service2 from '../../assets/02.webp';
-import service3 from '../../assets/04.jpg';
-import service4 from '../../assets/05.jpg';
-import service5 from '../../assets/06.avif';
+import service1 from '../../assets/fg.png';
+import service2 from '../../assets/df.png';
+import service3 from '../../assets/sa.png';
+import service4 from '../../assets/sd.png';
+import service5 from '../../assets/gh.png';
 
 const serviceData = [
   {
