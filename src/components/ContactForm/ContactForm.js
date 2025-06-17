@@ -29,7 +29,7 @@ const ContactForm = () => {
       )
       .then(() => {
         alert('✅ Appointment booked! Thank you.');
-        sendToDoctorWhatsApp(); // ✅ Message to doctor only
+         // ✅ Message to doctor only
       })
       .catch((error) => {
         alert('❌ Failed to send. Please try again.');
@@ -37,20 +37,20 @@ const ContactForm = () => {
       });
   };
 
-  const sendToDoctorWhatsApp = () => {
-    const { name, email, phone, service, department, message } = formData;
-    const text = `🦷 New Appointment Booking
-👤 Name: ${name}
-📧 Email: ${email}
-📱 Phone: ${phone}
-🦷 Service: ${service}
-🏥 Department: ${department}
-📝 Message: ${message}`;
+//   const sendToDoctorWhatsApp = () => {
+//     const { name, email, phone, service, department, message } = formData;
+//     const text = `🦷 New Appointment Booking
+// 👤 Name: ${name}
+// 📧 Email: ${email}
+// 📱 Phone: ${phone}
+// 🦷 Service: ${service}
+// 🏥 Department: ${department}
+// 📝 Message: ${message}`;
 
 //     const url = `https://wa.me/919790633757?text=${encodeURIComponent(text)}`;
 // window.open(url, '_blank');
 
-  };
+  // };
 
   return (
     <form onSubmit={handleSubmit}>
