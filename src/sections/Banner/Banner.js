@@ -2,7 +2,7 @@
 import './Banner.scss';
 import {Link} from 'react-router-dom';
 import icon from '../../assets/banner/icons/Calling.png';
-import bannerImg from '../../assets/banner/kh.png';
+import bannerImg from '../../assets/akka.png';
 // import doctorImg from '../../assets/banner/doctor.png';
 import bannerPattern from '../../assets/banner/pattern_02.png';
 import shapeOne from '../../assets/banner/vector_01.png';
@@ -44,7 +44,7 @@ const Banner = () => {
                             <div className="col-lg-6">
                                 <div className="banner-img-area" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
                                     <div className="banner-img">
-                                        <img src={bannerImg} alt="banner model" />
+                                        <img src={bannerImg} alt="banner model" height={"600px"} width={"450px"}/>
                                     </div>
                                     <div className='info-box'>
 
