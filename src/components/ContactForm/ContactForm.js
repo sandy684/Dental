@@ -20,13 +20,13 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
+   emailjs
       .send(
-        'service_zp99x2f',
-        'template_82pjewb',
+        'service_cuah7yr',  //your service id
+        'template_apzfn7p', //your template id
         formData,
-        'AUk_j79tcGy2P60MS'
-      )
+        'WpYyLZ4D0D0mon2d6' //your public key
+      )
       .then(() => {
         alert('✅ Appointment booked! Thank you.');
          // ✅ Message to doctor only
